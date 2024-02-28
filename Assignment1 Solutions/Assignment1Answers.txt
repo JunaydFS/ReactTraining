@@ -1,0 +1,34 @@
+28th February, 2024 - Assignment 1
+
+3) What are keys in ReactJS? How keys are involved in array processing?
+
+A key is a unique identifier. In React, it is used to identify which items have changed, updated, or deleted from the Lists. It is useful when we dynamically created components or when the users alter the lists. It also helps to determine which components in a collection needs to be re-rendered instead of re-rendering the entire set of components every time.
+
+Keys should be given inside the array to give the elements a stable identity. The best way to pick a key as a string that uniquely identifies the items in the list. It can be understood with the below example.
+
+
+
+const stringLists = [ 'Peter', 'Sachin', 'Kevin', 'Dhoni', 'Alisa' ];   
+    
+const updatedLists = stringLists.map((strList)=>{   
+    <li key={strList.id}> {strList} </li>;   
+});  
+
+
+4) How to display images in ReactJS?
+
+Let's assume the path of the image (either local or a hyperlink) is stored in a JS variable x.
+Eg:
+let x="https://th.bing.com/th/id/R.3515f0f9061ff6d239162d9428795e4e?rik=3cBS2PD%2f1R3PYA&pid=ImgRaw&r=0";
+
+We can insert this variable into the src attribute of an img HTML tag using curly braces.
+
+<img src = "{x}"/>
+
+We can also use import.
+
+ // Assuming logo.png is in the same folder as JS file
+ import logo from './logo.png';
+
+ // ...later
+ <img src={logo} alt="logo" />
