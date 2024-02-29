@@ -1,0 +1,30 @@
+.card  img
+{
+    width : 50px;
+    height: 50px;
+    border-radius: 100px;
+    padding : 1px;
+    border: 1px solid gray;
+    
+}
+
+#appointButton{
+    background-color: green;
+}
+
+.designation{
+    color: grey;
+    font-size: small;
+    padding: 3px;
+}
+
+.card
+{
+    border: 1px solid gray;
+    width : 150px;
+    margin: 5px;
+    text-align: center;
+    padding : 5px; 
+    float:left;
+}
+
